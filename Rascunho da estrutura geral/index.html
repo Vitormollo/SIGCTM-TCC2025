@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="auto">
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +11,56 @@
 
 
 
-    <header class="p-1">
-        <div class="float-end">
-            <section class="barralateral" id="logo-lateral">
-                <a href="index.html">
-                    <img src="img/logo/Logo_light_cTexto.svg" class="img-fluid d-none d-xl-block" alt="Logo Conselho Tutelar de Mococa" width="100%">
-                    <img src="img/logo/logo.light.svg" class="img-fluid d-xl-none" alt="Logo Conselho Tutelar de Mococa" width="100%">
-                </a>
-            </section>
-        </div>
+    <header class="d-flex flex-column flex-shrink p-2 bg-body-tertiary">
+        
+        <!--LOGO-->
+        <section class="barralateral" id="logo-lateral">
+            <a href="index.html">
+                <img src="img/logo/Logo_light_cTexto.svg" class="img-fluid d-none d-xl-block" alt="Logo Conselho Tutelar de Mococa" width="100%">
+                <img src="img/logo/logo.light.svg" class="img-fluid d-xl-none" alt="Logo Conselho Tutelar de Mococa" width="100%">
+            </a>
+        </section><!--LOGO-->
+        
+        
+        <hr>
+
+
+        <!--NAVEGAÇÃO LATERAL-->
+        <section class="barralateral" id="navegacao-lateral">
+            <nav class="navbar overflow-auto w-100">
+                <ul class="nav nav-pills flex-column mb-auto w-100">
+                    <li class="nav-item w-100">
+                        <a href="" class="nav-link bg-primary active" aria-current="page">
+                            <i class="bi bi-house-door me-2"></i>
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle link-body-emphasis w-100" data-bs-toggle="collapse" href="#assistidosCollapse"
+                            role="button">
+                            <i class="bi bi-person-heart me-2"></i>
+                            Assistidos
+                        </a>
+                        <div class="collapse show" id="assistidosCollapse">
+                            <ul class="nav flex-column ps-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis">Consulta detalhada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis">Localizador de pasta</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </section><!--NAVEGAÇÃO LATERAL-->
+
+
+
+
     </header>
 
 

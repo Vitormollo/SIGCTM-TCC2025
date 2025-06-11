@@ -14,14 +14,27 @@ body{
 
 
 
-
+/*BARRA LATERAL*/
 header{
-    background: red;
-    
     position: relative;
     height: 100%;
-    width: 256px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main{
     background: green;
     
@@ -63,7 +76,7 @@ main{
 @media (min-width: 1200px) {
   /* Estilos para desktops grandes */
     header{
-        width: 256px;
+        width: 260px;
     }
 }
 
