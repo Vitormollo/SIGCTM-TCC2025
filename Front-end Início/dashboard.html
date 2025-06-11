@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Conselho Tutelar</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body class="d-flex">
+  <!-- Menu Lateral -->
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary h-100 shadow menu-lateral fixed-top"
+    style="width: 260px; height: 100vh">
+    <!-- Logo com suporte a tema claro/escuro -->
+    <a href="dashboard.html" class="d-flex align-items-center mb-3 w-100 mb-md-0 text-decoration-none">
+      <picture class="w-100">
+        <source srcset="img/logo/Logo_dark_cTexto.svg" media="(prefers-color-scheme: dark)" />
+        <img src="img/logo/Logo_light_cTexto.svg" alt="Conselho Tutelar" class="me-2 w-100" />
+      </picture>
+    </a>
+
+    <hr />
+
+    <!-- Navegação principal -->
+    <div class="overflow-auto">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link bg-primary active" aria-current="page">
+            <i class="bi bi-house-door me-2"></i>
+            Início
+          </a>
+        </li>
+
+        <!-- Dropdown de Assistidos -->
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle link-body-emphasis" data-bs-toggle="collapse" href="#assistidosCollapse"
+            role="button">
+            <i class="bi bi-person-heart me-2"></i>
+            Assistidos
+          </a>
+          <div class="collapse show" id="assistidosCollapse">
+            <ul class="nav flex-column ps-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">Consulta detalhada</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">Localizador de pasta</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Dropdown de Coordenação -->
+        <li class="nav-item">
+          <!-- Use link-body-emphasis para cor automática tema claro/escuro -->
+          <a class="nav-link dropdown-toggle link-body-emphasis" data-bs-toggle="collapse" href="#coordenacaoCollapse"
+            role="button">
+            <i class="bi bi-people me-2"></i>
+            Coordenação
+          </a>
+          <div class="collapse" id="coordenacaoCollapse">
+            <ul class="nav flex-column ps-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">Requerimentos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">Log de atividade</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            <i class="bi bi-telephone-fill me-2"></i>
+            Notificações
+            <span class="badge bg-danger ms-3">+15</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            <i class="bi bi-file-earmark-bar-graph me-2"></i>
+            Estatísticas
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            <i class="bi bi-archive me-2"></i>
+            Arquivo Morto
+            <span class="badge bg-danger ms-3">+1</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            <i class="bi bi-file-earmark-bar-graph me-2"></i>
+            Estatísticas
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            <i class="bi bi-question-circle me-2"></i>
+            Suporte
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Fim Navegação principal -->
+
+    <hr />
+    <!-- Card informativo -->
+    <div class="card border-0 shadow mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Dados do CT</h5>
+        <div class="d-flex justify-content-between">
+          <span class="p small">
+            <i class="bi bi-whatsapp"></i>
+            0000-0000
+          </span>
+          <span class="p small">
+            <i class="bi bi-telephone-fill"></i>
+            0000-0000
+          </span>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <span class="p small">
+            <i class="bi bi-telephone-fill"></i>
+            0000-0000
+          </span>
+          <span class="p small">
+            <i class="bi bi-telephone-fill"></i>
+            0000-0000
+          </span>
+        </div>
+        <div class="p small">
+          R. Cap. Miguel Ferreira, 533 - Vila Mariana, Mococa
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé do menu -->
+    <div class="dropdown dropup end-0">
+      <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+        <img src="img/pfp/unknow.jpg" alt="Usuário" width="32" class="rounded-circle me-2" />
+        <strong>Usuário</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#">Perfil</a></li>
+        <li><a class="dropdown-item" href="#">Configurações</a></li>
+        <li>
+          <hr class="dropdown-divider" />
+        </li>
+        <li><a class="dropdown-item" href="index.html">Sair</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Fim Menu Lateral -->
+
+  <!-- Conteúdo Principal -->
+  <div class="w-100 main-over">
+    <main class="flex-grow-1 p-4 py-0 caract100w">
+      <div class="shadow main-centrado h-100">
+        <!--Navegação superior-->
+        <nav class="bg-body-tertiary d-flex justify-content-between p-2 align-items-center sticky-top">
+          <ul class="nav nav-underline px-1 nav-barho">
+            <li class="nav-item">
+              <a class="nav-link px-3" aria-current="page" href="#" target="_blank">Regimento CT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="pdf/regulamento_ECA/eca_1ed.pdf" target="_blank">ECA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#" target="_blank">Direitos Violados</a>
+            </li>
+          </ul>
+
+          <div class="">
+            <form class="d-flex align-items-center" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+        <!--Fim Navegação superior-->
+        <!--Conteúdo do site-->
+        <div class="p-2">
+          <!--Espaço de notificações & Quote-->
+          <div class="d-flex">
+            <div class="not-card not-cont caract100w">
+              <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-between" id="scrollspyHeading1">
+                  <h5 class="m-0">
+                    <i class="bi bi-telephone-fill"></i>
+                    Notificações pendentes
+                  </h5>
+                  <div>
+                    <button class="btn btn-link btn-sm">Expandir</button>
+                  </div>
+                </div>
+
+                <div class="card-body p-2">
+                  <div class="not-info">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <td class="w-75">
+                            <p class="m-0">
+                              <span class="badge text-bg-secondary small me-2">
+                                17/05/2015
+                              </span>
+                              Tomás Anthony Leandro Sales
+                            </p>
+                          </td>
+                          <td class="fw-bold link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                            278/01
+                          </td>
+                          <td>27/06</td>
+                          <td>07:00</td>
+                          <td class="justify-content-end">
+                            <button class="btn btn-outline-secondary btn-sm py-0" type="button" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Detalhes
+                            </button>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-secondary btn-sm py-0 text-end">
+                              Notificar
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--QUOTE 1-->
+            <div>
+              <blockquote class="blockquote quote1 d-flex align-items-center h-100">
+                <p class="p-4 fs-6 fst-italic">
+                  &nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;Proteger os vulneráveis não é
+                  escolha, é dever de todos. O Conselho Tutelar faz isso por
+                  nós todos os dias. "
+                </p>
+              </blockquote>
+            </div>
+            <!--FIM QUOTE 1-->
+          </div>
+          <!--Espaço de notificações & Quote-->
+
+          <hr />
+
+          <!--Consulta rápida-->
+          <div>
+            <div class="card">
+              <div class="card-header d-flex align-items-center justify-content-between" id="scrollspyHeading1">
+                <h5 class="m-0">
+                  <i class="bi bi-person-heart me-2"></i>
+                  Consulta rápida
+                </h5>
+                <div>
+                  <button class="btn btn-link btn-sm">
+                    Consulta detalhada
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <form action="" class="px-3 py-3">
+                  <div class="row g-2">
+                    <!--Processo input-->
+                    <div class="col-md-3 mb-2">
+                      <label for="processocr">Processo</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control form-control-lg text-end" id="processocr" />
+                        <span class="input-group-text">/</span>
+                        <input type="text" class="form-control form-control-lg" id="anoprocessocr" />
+                      </div>
+                    </div>
+
+                    <!--Nome do assistido input-->
+                    <div class="col-md-9 mb-2">
+                      <label for="nomeAssistidocr">Nome do Assistido</label>
+                      <input type="text" class="form-control form-control-lg" id="nomeAssistidocr" />
+                    </div>
+
+                    <!--Nome da genitora input-->
+                    <div class="col-md-8 mb-2">
+                      <label for="nomeGenitoracr">Nome da Genitora</label>
+                      <input type="text" class="form-control form-control-lg" id="nomeGenitoracr" />
+                    </div>
+
+                    <!--Conselheira input-->
+                    <div class="col-md-4 mb-2">
+                      <label for="conselheiracr">Conselheira</label>
+                      <input type="text" class="form-control form-control-lg" id="conselheiracr" disabled />
+                    </div>
+
+                    <div class="col-md-8 mb-2">
+                      <label for="nomeGenitorcr">Nome do Genitor</label>
+                      <input type="text" class="form-control form-control-lg" id="nomeGenitorcr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="observacaocr">Observação</label>
+                      <input type="text" class="form-control form-control-lg" id="observacaocr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="telefone1cr">Telefone 1</label>
+                      <input type="text" class="form-control form-control-lg" id="telefone1cr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="dtnascimentocr">Data de nascimento</label>
+                      <input type="text" class="form-control form-control-lg" id="dtnascimentocr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="sexocr">Sexo</label>
+                      <input type="text" class="form-control form-control-lg" id="sexocr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="telefone2cr">Telefone 2</label>
+                      <input type="text" class="form-control form-control-lg" id="telefone2cr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="ruacr">Rua</label>
+                      <input type="text" class="form-control form-control-lg" id="ruacr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="bairrocr">Bairro</label>
+                      <input type="text" class="form-control form-control-lg" id="bairrocr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="telefone3cr">Telefone 3</label>
+                      <input type="text" class="form-control form-control-lg" id="telefone3cr" />
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <label for="cidadecr">Cidade</label>
+                      <input type="text" class="form-control form-control-lg" id="cidadecr" />
+                    </div>
+                    <div class="col-md-1 mb-2">
+                      <label for="numerocr">Número</label>
+                      <input type="text" class="form-control form-control-lg" id="numerocr" />
+                    </div>
+                    <div class="col-md-1 mb-2">
+                      <label for="ufcr">UF</label>
+                      <input type="text" class="form-control form-control-lg" id="ufcr" />
+                    </div>
+                    <div class="col-md-2 mb-2">
+                      <label for="cepcr">CEP</label>
+                      <input type="text" class="form-control form-control-lg" id="cepcr" />
+                    </div>
+                    <div class="col-md-7 mb-2">
+                      <label for="cepcr">Instituição</label>
+                      <input type="text" class="form-control form-control-lg" id="cepcr" disabled />
+                    </div>
+                    <div class="col-md-5 mb-2">
+                      <label for="cepcr">Contato</label>
+                      <input type="text" class="form-control form-control-lg" id="cepcr" disabled />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--Consulta rápida-->
+
+          <hr />
+
+          <div>a</div>
+        </div>
+        <!--Fim Conteúdo do site-->
+      </div>
+    </main>
+  </div>
+  <!-- Fim Conteúdo Principal -->
+
+  <!-- Modal detalhes (do item de notificações)-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            <span class="fs-6 fw-bold pe-3"> Notificação </span>
+            Tomás Anthony Leandro Sales
+          </h1>
+          <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-check-lg"></i>
+            Feito
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim Modal detalhes (do item de notificações)-->
+
+  <!--Modal Notificações expandido-->
+
+  <!--Fim Modal Notificações expandido-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para tema automático e conteúdo dinâmico -->
+  <script>
+    // Detecção automática de tema
+    function updateTheme() {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark"
+      ).matches;
+      document.documentElement.setAttribute(
+        "data-bs-theme",
+        prefersDark ? "dark" : "light"
+      );
+    }
+
+    // Inicialização
+    document.addEventListener("DOMContentLoaded", function () {
+      updateTheme();
+      updateDynamicCard();
+
+      // Monitora mudanças de tema
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", updateTheme);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+@import url(main.css);
+
+body,html{
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 840px;
+}
+body{
+    display: flex;
+}
+
+
+
+
+header{
+    background: red;
+    
+    position: relative;
+    height: 100%;
+    width: 256px;
+}
+main{
+    background: green;
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 768px;
+}
+
+
+
+/*MEDIA QUERIES PARA RESPONSIVIDADE*/
+
+/* Estilos globais (Mobile First) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Estilos para smartphones */
+    header{
+        width: 72px;
+    }
+}
+
+/* Tablets em modo retrato e acima (≥600px) */ /*md*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tablets */
+    header{
+        width: 72px;
+    }
+}
+
+/* Telas médias: notebooks pequenos e desktops básicos (≥900px) */ /*lg*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Estilos para laptops */
+    header{
+        width: 72px;
+    }
+}
+
+/* Telas grandes: desktops e monitores grandes (≥1200px) */ /*xl*/
+@media (min-width: 1200px) {
+  /* Estilos para desktops grandes */
+    header{
+        width: 256px;
+    }
+}
+
+/*MEDIA QUERIES PARA RESPONSIVIDADE*/
+
