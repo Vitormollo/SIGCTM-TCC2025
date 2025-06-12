@@ -48,7 +48,9 @@ main{
     min-width: 768px;
 }
 
-
+#conteudodadosct{
+    transition: height .1s ease;
+}
 
 /*MEDIA QUERIES PARA RESPONSIVIDADE*/
 @media (max-width:575px){
