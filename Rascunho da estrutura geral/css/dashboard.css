@@ -1,5 +1,7 @@
 @import url(main.css);
 
+
+
 body,html{
     
     margin: 0;
@@ -15,46 +17,67 @@ body{
 
 
 /*BARRA LATERAL*/
-header{
+aside{
     position: fixed;
     height: 100%;
+    padding: 0px 0px 20px;
+}
+#logo-lateral{
+    padding: 10px;
+}
+#navegacao-lateral{
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .nav-item{
-    width: 48px;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main{
-    background: green;
-    
-    right: 0;
-    margin-left: 72px;
-    height: 600%;
     width: 100%;
-    min-width: 768px;
 }
-
+#dados-lateral{
+    margin: 0 10px;
+}
 #conteudodadosct{
     transition: height .1s ease;
 }
+#rodape-lateral{
+    position: absolute;
+    padding-bottom: 5px;
+    bottom: 0;
+    top: auto;
+    left: 0;
+}
+.fotodeperfil-lateral{
+    width: 20px;
+}
+.nomedeusuario-lateral{
+    margin-right: 4px;
+}
+/*BARRA LATERAL*/
+
+
+
+/*PRINCIPAL*/
+main{
+    right: 0;
+    margin-left: 72px;
+    height: 100%;
+    width: 100%;
+    min-width: 768px;
+}
+#atalhospdf-header a{
+    padding: 0 12px;
+
+}
+
+
+
+
+/*PRINCIPAL*/
+
+
 
 /*MEDIA QUERIES PARA RESPONSIVIDADE*/
 @media (max-width:575px){
-    header{
+    aside{
         max-width: 72px;
     }
 }
@@ -62,7 +85,7 @@ main{
 /* Estilos globais (Mobile First) */
 @media (min-width: 576px) and (max-width: 767px) {
     /* Estilos para smartphones */
-    header{
+    aside{
         width: 72px;
     }
 }
@@ -70,7 +93,7 @@ main{
 /* Tablets em modo retrato e acima (≥600px) */ /*md*/
 @media (min-width: 768px) and (max-width: 991px) {
   /* Estilos para tablets */
-    header{
+    aside{
         width: 72px;
     }
 }
@@ -78,7 +101,7 @@ main{
 /* Telas médias: notebooks pequenos e desktops básicos (≥900px) */ /*lg*/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Estilos para laptops */
-    header{
+    aside{
         width: 72px;
     }
 }
@@ -86,8 +109,9 @@ main{
 /* Telas grandes: desktops e monitores grandes (≥1200px) */ /*xl*/
 @media (min-width: 1200px) {
   /* Estilos para desktops grandes */
-    header{
+    aside{
         width: 260px;
+        padding: 0px 0px 75px;
     }
     main{
         margin-left: 260px;
@@ -95,6 +119,9 @@ main{
     
     .nav-item{
         width: 100%;
+    }
+    .fotodeperfil-lateral{
+    width: 40px;
     }
 }
 

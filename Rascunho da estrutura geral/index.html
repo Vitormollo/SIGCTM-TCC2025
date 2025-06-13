@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard | Conselho Tutelar</title>
     <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="icon" href="img/logo/favicon.light/favicon.light.svg">
 </head>
 <body>
-    
-
-
-
-    <header class="d-flex flex-column flex-shrink p-2 bg-body-tertiary shadow-lg">
-        
+    <!--LATERAL-->
+    <aside class="d-flex flex-column flex-shrink bg-body-tertiary">
         <!--LOGO-->
         <section class="barralateral" id="logo-lateral">
             <a href="index.html">
@@ -20,60 +17,85 @@
                 <img src="img/logo/logo.light.svg" class="img-fluid d-xl-none" alt="Logo Conselho Tutelar de Mococa" width="100%">
             </a>
         </section><!--LOGO-->
-        
-        <hr>
-
-        <!--NAVEGAÇÃO LATERAL-->
-        <section class="barralateral" id="navegacao-lateral">
-            <nav class="navbar overflow-auto w-100">
+        <!--NAVEGACAO LATERAL-->
+        <section class="barralateral w-100" id="navegacao-lateral">
+            <nav class="navbar w-100">
                 <ul class="nav nav-pills flex-column mb-auto w-100 align-content-center">
+                    <!--MENU INICIO-->
                     <li class="nav-item">
-                        <a href="" class="nav-link bg-primary active rounded-pill d-flex" aria-current="page">
+                        <a href="" class="nav-link bg-primary active rounded-0 d-flex" aria-current="page">
                             <i class="bi bi-house-door"></i>
                             <span class="ms-2 d-none d-xl-block">Início</span>
                         </a>
-                    </li>
-
+                    </li><!--MENU INICIO-->
+                    <!--MENU ASSISTIDOS-->
                     <li class="nav-item">
                         <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
                             <i class="bi bi-person-heart"></i>
                             <span class="ms-2 d-none d-xl-block">Assistidos</span>
                         </a>
-                    </li>
-
+                    </li><!--MENU ASSISTIDOS-->
+                    <!--MENU ATENDIMENTO-->
                     <li class="nav-item">
                         <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
                             <i class="bi bi-person-walking"></i>
                             <span class="ms-2 d-none d-xl-block">Atendimento</span>
                         </a>
-                    </li>
-
+                    </li><!--MENU ATENDIMENTO-->
+                    <!--MENU NOTIFICAÇÃO-->
                     <li class="nav-item">
                         <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
                             <i class="bi bi-telephone-fill"></i>
                             <span class="ms-2 d-none d-xl-block">Notificação</span>
                         </a>
-                    </li>
-
-                    
+                    </li><!--MENU NOTIFICAÇÃO-->
+                    <!--MENU OFÍCIOS-->
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
+                            <i class="bi bi-envelope-paper-fill"></i>
+                            <span class="ms-2 d-none d-xl-block">Ofícios</span>
+                        </a>
+                    </li><!--MENU OFÍCIOS-->
+                    <!--MENU PROTOCOLOS-->
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
+                            <i class="bi bi-file-earmark-post-fill"></i>
+                            <span class="ms-2 d-none d-xl-block">Protocolos</span>
+                        </a>
+                    </li><!--MENU PROTOCOLOS-->
+                    <!--MENU ATIVIDADE-->
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
+                            <i class="bi bi-card-list"></i>
+                            <span class="ms-2 d-none d-xl-block">Atividade</span>
+                        </a>
+                    </li><!--MENU ATIVIDADE-->
+                    <!-- MENU ESTATÍSTICAS-->
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <span class="ms-2 d-none d-xl-block">Estatísticas</span>
+                        </a>
+                    </li><!--MENU ESTATÍSTICAS-->
+                    <!--MENU CONTATOS-->
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-body-emphasis d-flex" aria-current="page">
+                            <i class="bi bi-chat-right-dots-fill"></i>
+                            <span class="ms-2 d-none d-xl-block">Contatos</span>
+                        </a>
+                    </li><!--CONTATOS-->
                 </ul>
             </nav>
         </section><!--NAVEGAÇÃO LATERAL-->
-
-        <hr>
-
+        <hr><!--Divisoria entre NAVEGACAO e DADOS-->
+        <!--DADOS DO CT-->
         <section class="barralateral d-none d-xl-block card" id="dados-lateral">
-            
                 <a href="#conteudodadosct" data-bs-toggle="collapse" class="link-primary text-decoration-none ">
                     <div class="card-header d-flex justify-content-between">
-                        
                         <span>Dados do CT</span>
-                        <i class="bi bi-info-circle"></i>
-                        
+                        <i class="bi bi-info-circle"></i>    
                     </div>
                 </a>
-           
-            
             <div class="card-body collapse p small" id="conteudodadosct">
                 <div class="d-flex justify-content-between">
                     <span>
@@ -97,17 +119,106 @@
                 </div>
                 <hr>
                 <div class="p small">R. Cap. Miguel Ferreira, 533 - Vila Mariana, Mococa</div>
-                
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <span><i class="bi bi-envelope-fill"></i></span>
+                    <span class="p small">conselhotutelar@mococa.sp.gov.br</span>
+                </div>
             </div>
-        </section>
+        </section><!--DADOS DO CT-->
+        <!-- RODAPE LATERAL-->
+        <section class="dropup w-100 card bg-body-tertiary rounded-0" id="rodape-lateral">
+            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                <img src="img/pfp/unknow.jpg" alt="Foto de perfil de suário" class="rounded-circle fotodeperfil-lateral m-2" />
+                <strong class="d-none d-xl-block nomedeusuario-lateral">Nome de usuário</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+                <li><a class="dropdown-item" href="#">
+                    <i class="bi bi-person-gear"></i>
+                    Perfil
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="bi bi-gear"></i>
+                    Configurações
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="bi bi-patch-question"></i>
+                    Suporte
+                </a></li>
+                <li>
+                <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="index.html">Sair</a></li>
+            </ul>
+        </section><!-- RODAPE LATERAL-->
+    </aside><!--LATERAL-->
 
-
-
-    </header>
-
-
+    <!--PRINCIPAL-->
     <main>
-        a1aaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaa
+        <header class="p-2 bg-body-tertiary">
+            <div class="d-flex justify-content-between">
+                <h7 class="ms-2 text-secondary">Pesquisa rápida</h7>
+                <span id="atalhospdf-header" class="d-none d-md-block">
+                    <span><a href="" class="link-secondary">Lista Direitos Violados</a></span>    
+                    <span><a href="" class="border-start border-1 border-secondary link-secondary">Regimento interno</a></span>    
+                    <span><a href="" class="border-start border-1 border-secondary link-secondary">Estatuto da Criança e Adolescente</a></span>    
+                </span>
+            </div>
+            <hr style="margin-bottom: 5px;margin-top: 1px;">
+            <form class="row align-items-center w-100" action="">
+                <div class="col-auto m-1">
+                    <label for="nomedoassistido-header" class="visually-hidden">Nome do assistido</label>
+                    <input type="text" class="form-control" id="nomeassistido-header" placeholder="Nome do Assistido">
+                </div>
+                <div class="col-2 m-1">
+                    <div class="input-group">
+                        <label for="numeropasta-header" class="visually-hidden">O número da pasta do assistido</label>
+                        <input type="text" class="form-control rounded-start-2" placeholder="Número" id="numeropasta-header">
+                        <span class="input-group-text">/</span>
+                        <label for="anopasta-header" class="visually-hidden">O ano da pasta do assistido</label>
+                        <input type="text" class="form-control" placeholder="Ano" id="anopasta-header">
+                    </div>
+                </div>
+
+                <div class="col-auto m-1">
+                    <label for="nomedoassistido-header" class="visually-hidden">Nome da Genitora</label>
+                    <input type="text" class="form-control" id="nomeassistido-header" placeholder="Nome da Genitora">
+                </div>
+
+                <div class="col-3 m-1">
+                    <div class="input-group">
+                        <label for="dianascimento-header" class="visually-hidden">O dia de nascimento do assistido</label>
+                        <input type="text" class="form-control rounded-start-2" placeholder="Dia" id="dianascimento-header">
+                        <span class="input-group-text">/</span>
+                        <label for="mesnascimento-header" class="visually-hidden">O mês de nascimento do assistido</label>
+                        <input type="text" class="form-control" placeholder="Mês" id="mesnascimento-header">
+                        <span class="input-group-text">/</span>
+                        <label for="anonascimento-header" class="visually-hidden">O ano de nascimento do assistido</label>
+                        <input type="text" class="form-control" placeholder="Ano" id="anonascimento-header">
+                    </div>
+                </div>
+
+                <div class="col-auto m-1">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-search"></i>
+                        Pesquisar
+                    </button>
+                </div>
+            </form>
+        </header>
+
+        <div id="conteudo-principal" class="m-2">
+            <h1>Finibus Bonorum et Malorum</h1>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        </div>
+
+        <footer>
+            Trabalho de conclusão de curso
+        </footer>
+
+
+
+
     </main>
 
 
