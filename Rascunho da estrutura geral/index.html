@@ -155,46 +155,41 @@
 
     <!--PRINCIPAL-->
     <main>
+        <!--BARRA SUPERIOR-->
         <header class="p-2 bg-body-tertiary">
-            <div class="d-flex justify-content-between">
-                <h7 class="ms-1 text-secondary">Página Inicial</h7>
-                <span id="atalhospdf-header" class="d-none d-md-block">
-                    <span><a href="" class="link-secondary">Lista Direitos Violados</a></span>    
-                    <span><a href="" class="border-start border-1 border-secondary link-secondary">Regimento interno</a></span>    
-                    <span><a href="" class="border-start border-1 border-secondary link-secondary">Estatuto da Criança e Adolescente</a></span>    
-                </span>
-            </div>
-            <hr style="margin-bottom: 5px;margin-top: 1px;">
-            <form action="">
-                <div class="row g-3">
-                    <div class="col-3">
-                        <input type="text" class="form-control" placeholder="Nome do Assistido" aria-label="City">
-                    </div>
-                    <div class="col input-group">
-                        <input type="number" class="form-control" placeholder="Nº" aria-label="Número">
-                        <span class="input-group-text">/</span>
-                        <input type="number" class="form-control" placeholder="Ano" aria-label="Ano">
-                    </div>
-                    
-                    <div class="col">
-                        <input type="date" class="form-control" placeholder="State" aria-label="State">
-                    </div>
-                    <div class="col-1">
-                        <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
-                    </div>
-                    
-                </div>
-            </form>
-        </header>
+            <!--TÍTULO DA PÁGINA-->
+            <h7 class="ms-1 text-secondary">
+                > Página Inicial
+            </h7><!--TÍTULO DA PÁGINA-->
 
+            <!--BUSCA BASICA-->
+            <span id="buscabasica-header">
+                <form action="">
+                    <input type="text" name="" id="buscabasica-header-form" class="form-control" placeholder="Nome do Assistido">
+                    <button class="btn btn-outline-primary"><i class="bi bi-search"></i></button>
+                </form>
+            </span><!--BUSCA BASICA-->
+
+            <!--ATALHOS-->
+            <span id="atalhospdf-header" class="d-none d-md-block small">
+                <span><a href="" class="link-secondary">Direitos Violados</a></span>    
+                <span><a href="" class="border-start border-1 border-secondary link-secondary">Regimento interno</a></span>    
+                <span><a href="" class="border-start border-1 border-secondary link-secondary">ECA</a></span>    
+            </span><!--ATALHOS-->
+        </header><!--BARRA SUPERIOR-->
+
+        <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal" class="m-2">
-            <h1>Finibus Bonorum et Malorum</h1>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-        </div>
+            <div class="d-block d-xl-flex">
+                <section class="card secao-main">aa</section>
+                <section class="card secao-main">aa</section>
+            </div>
+        </div><!--CONTEUDO PRINCIPAL-->
 
+        <!--RODAPE-->
         <footer>
-            Trabalho de conclusão de curso
-        </footer>
+            
+        </footer><!--RODAPE-->
 
 
 
