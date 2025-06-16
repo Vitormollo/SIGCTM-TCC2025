@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br" >
+<html lang="pt-br" data-bs-theme="light">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard | Conselho Tutelar</title>
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="icon" href="img/logo/favicon.light/favicon.light.svg">
+    <script src="js/themealt.js"></script>
 </head>
 <body>
     <!--LATERAL-->
@@ -13,8 +14,10 @@
         <!--LOGO-->
         <section class="barralateral" id="logo-lateral">
             <a href="index.html">
-                <img src="img/logo/Logo_light_cTexto.svg" class="img-fluid d-none d-xl-block" alt="Logo Conselho Tutelar de Mococa" width="100%">
-                <img src="img/logo/logo.light.svg" class="img-fluid d-xl-none" alt="Logo Conselho Tutelar de Mococa" width="100%">
+                <img src="img/logo/Logo_light_cTexto.svg" class="img-fluid d-none d-xl-block d-light" alt="Logo Conselho Tutelar de Mococa" width="100%">
+                <img src="img/logo/logo.light.svg" class=" img-fluid d-xl-none d-light" alt="Logo Conselho Tutelar de Mococa" width="100%">
+                <img src="img/logo/Logo_dark_cTexto.svg" class="img-fluid d-none d-xl-block d-dark" alt="Logo Conselho Tutelar de Mococa" width="100%">
+                <img src="img/logo/logo.dark.svg" class=" img-fluid d-xl-none d-dark" alt="Logo Conselho Tutelar de Mococa" width="100%">
             </a>
         </section><!--LOGO-->
         <!--NAVEGACAO LATERAL-->
@@ -133,9 +136,11 @@
                 <strong class="d-none d-xl-block nomedeusuario-lateral">Nome de usuário</strong>
             </a>
             <ul class="dropdown-menu text-small shadow">
-                <li><a class="dropdown-item" href="#">
-                    <i class="bi bi-person-gear"></i>
-                    Perfil
+                <li><a class="dropdown-item" href="#" onclick="themeAlt()">
+                    <i class="bi bi-moon-fill d-dark-none d-light"></i>
+                    <i class="bi bi-sun-fill d-light-none d-dark"></i>
+                    <span class="d-light">Tema Escuro</span>
+                    <span class="d-dark">Tema Claro</span>
                 </a></li>
                 <li><a class="dropdown-item" href="#">
                     <i class="bi bi-gear"></i>
@@ -209,7 +214,7 @@
 
 
 
-
+    
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
