@@ -1,0 +1,22 @@
+@import url(main.css);
+
+html,body{
+    height: 100%;
+}
+
+.form-container{
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.eyes-slashnfill{
+    position: relative;
+}
+.eyes-slashnfill i{
+    position: absolute;
+    cursor: pointer;
+    font-size: 26px;
+    margin-top: -48px;
+    right: 15px;
+}
+
