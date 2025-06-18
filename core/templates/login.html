@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br" data-bs-theme="light">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Conselho Tutelar</title>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="icon" href="img/logo/favicon.light/favicon.light.svg">
-    <script src="js/themealt.js"></script>
+    <title>Login | Conselho Tutelar</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <link rel="icon" href="{% static 'img/logo/favicon.light/favicon.light.svg' %}">
+    <script src="{% static 'js/themealt.js' %}"></script>
 </head>
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
     <main class="w-100 m-auto form-container">
         <form action="dashboard.html">
             <div class="w-100 text-center mb-4">
-                <img src="img/logo/Logo_light_cTexto.svg" alt="Conselho Tutelar - Tema Claro" class="w-100 theme-logo-light">
-                <img src="img/logo/Logo_dark_cTexto.svg" alt="Conselho Tutelar - Tema Escuro" class="w-100 theme-logo-dark" style="display: none;">
+                <img src="{% static 'img/logo/Logo_light_cTexto.svg' %}" alt="Conselho Tutelar - Tema Claro" class="w-100 theme-logo-light">
+                <img src="{% static 'img/logo/Logo_dark_cTexto.svg' %}" alt="Conselho Tutelar - Tema Escuro" class="w-100 theme-logo-dark" style="display: none;">
             </div>
             
             <h1 class="h3 mb-3 fw-normal">Entre no sistema</h1>
@@ -37,7 +38,7 @@
             </div>
             <button class="btn btn-primary w-100 py-2">Entre</button>
             <div class="text-body-tertiary mt-5 text-center fs-6">
-                <p>TCC 2025 - Sistema web de gestão do Conselho Tutelar de Mococa</p>
+                <p>TCC 2025 - Sistema Integrado de Gestão do <b>Conselho Tutelar</b> de Mococa</p>
                 <p class="fs-6">Ana Carolina Carnelos Masquetti e Vitor Mollo Cunha</p>
             </div>
         </form>

@@ -21,5 +21,6 @@ from core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.core)
+    path('', views.home),
+    path('login/', views.login)
 ]

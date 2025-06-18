@@ -3,5 +3,8 @@ from django.http import HttpResponse
 from .models import usuarios
 
 # Create your views here.
-def core(request):
+def home(request):
     return render(request,'index.html')
+
+def login(request):
+    return render(request,'login.html')
