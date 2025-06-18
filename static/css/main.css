@@ -2,3 +2,6 @@
 @import url(bootstrap.min.css);
 @import url(custom.css);
 
+.toast{
+    z-index: 100000;
+}
