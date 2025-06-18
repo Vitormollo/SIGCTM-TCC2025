@@ -1,0 +1,159 @@
+@import url(main.css);
+
+.referencia{
+    border: 1px solid red;
+}
+
+body,html{
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 840px;
+}
+body{
+    display: flex;
+}
+html[data-bs-theme="light"] .d-dark {
+    display: none !important;
+}
+
+html[data-bs-theme="dark"] .d-light {
+    display: none !important;
+}
+
+
+
+/*BARRA LATERAL*/
+aside{
+    position: fixed;
+    height: 100%;
+    padding: 0px 0px 20px;
+}
+#logo-lateral{
+    padding: 10px;
+}
+#navegacao-lateral{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.nav-item{
+    width: 100%;
+}
+#dados-lateral{
+    margin: 0 10px;
+}
+#conteudodadosct{
+    transition: height .1s ease;
+}
+#rodape-lateral{
+    position: absolute;
+    padding-bottom: 5px;
+    bottom: 0;
+    top: auto;
+    left: 0;
+}
+.fotodeperfil-lateral{
+    width: 20px;
+}
+.nomedeusuario-lateral{
+    margin-right: 4px;
+}
+/*BARRA LATERAL*/
+
+
+
+/*PRINCIPAL*/
+main{
+    right: 0;
+    margin-left: 72px;
+    height: 100%;
+    width: 100%;
+    min-width: 768px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h7{
+    cursor:default;
+}
+#atalhospdf-header a{
+    padding: 7px 12px;
+}
+#buscabasica-header form{
+    display: flex;
+    gap: 5px;
+}
+#buscabasica-header-form{
+    width: 250px;
+}
+
+.secao-main{
+    width: 100%;
+}
+
+
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+/*PRINCIPAL*/
+
+
+
+/*MEDIA QUERIES PARA RESPONSIVIDADE*/
+@media (max-width:575px){
+    aside{
+        max-width: 72px;
+    }
+}
+
+/*(≥576px)*/ /*sm*/
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Estilos para smartphones */
+    aside{
+        width: 72px;
+    }
+}
+
+/*(≥768px) */ /*md*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tablets */
+    aside{
+        width: 72px;
+    }
+}
+
+/*(≥992px) */ /*lg*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Estilos para laptops */
+    aside{
+        width: 72px;
+    }
+}
+
+/*(≥1200px) */ /*xl*/
+@media (min-width: 1200px) {
+  /* Estilos para desktops grandes */
+    aside{
+        width: 260px;
+        padding: 0px 0px 75px;
+    }
+    main{
+        margin-left: 260px;
+    }
+    .nav-item{
+        width: 100%;
+    }
+    .fotodeperfil-lateral{
+    width: 40px;
+    }
+}
+
+/*MEDIA QUERIES PARA RESPONSIVIDADE*/
+
