@@ -6,21 +6,41 @@
     <main>
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="notificacao" %}
         <!--CONTEUDO PRINCIPAL-->
-        <div id="conteudo-principal" class="m-2">
+        <div id="conteudo-principal overflow-hidden" class="m-2">
             <div class="card-header d-flex justify-content-between">
                 <h2 class="h5">Notificações <span class="badge text-bg-danger">+15</span></h2>
             </div>
-            <section>
-                <article class="card">
-                    <div class="card-header h5">
-                        <span>Martinho da Silva Safadão</span>
-                        <span class="badge text-bg-secondary">25/21</span>
-                    </div>
-                    <div class="card-body">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col ">
+                        <section class="m-0 ">
+                            <article class="card">
+                                <div class="card-header h5 d-flex justify-content-between">
+                                    <span>Martinho da Silva Safadão</span>
+                                    <span class="badge text-bg-secondary">25/21</span>
+                                </div>
+                                <div class="card-body">
 
+                                </div>
+                            </article>
+                        </section>
                     </div>
-                </article>
-            </section>
+                    <div class="col ">
+                        <section class="m-0 ">
+                            <article class="card">
+                                <div class="card-header h5 d-flex justify-content-between">
+                                    <span>Martinho da Silva Safadão</span>
+                                    <span class="badge text-bg-secondary">25/21</span>
+                                </div>
+                                <div class="card-body">
+
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
         </div><!--CONTEUDO PRINCIPAL-->
         <!--RODAPE-->
         <div class="border-bottom mb-3">
