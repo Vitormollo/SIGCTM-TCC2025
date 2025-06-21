@@ -1,0 +1,28 @@
+{% load static %}
+
+<section class="dropup w-100 card bg-body-tertiary rounded-0" id="rodape-lateral">
+    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+        <img src="{% static 'img/pfp/unknow.jpg' %}" alt="Foto de perfil de suário" class="rounded-circle fotodeperfil-lateral m-2" />
+        <strong class="d-none d-xl-block nomedeusuario-lateral">Nome de usuário</strong>
+    </a>
+    <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item temamudanca" onclick="themeAlt()">
+            <i class="bi bi-moon-fill d-dark-none d-light"></i>
+            <i class="bi bi-sun-fill d-light-none d-dark"></i>
+            <span class="d-light">Tema Escuro</span>
+            <span class="d-dark">Tema Claro</span>
+        </a></li>
+        <li><a class="dropdown-item" href="#">
+            <i class="bi bi-gear"></i>
+            Configurações
+        </a></li>
+        <li><a class="dropdown-item" href="#">
+            <i class="bi bi-patch-question"></i>
+            Suporte
+        </a></li>
+        <li>
+        <hr class="dropdown-divider" />
+        </li>
+        <li><a class="dropdown-item" href="{% url 'logout' %}">Sair</a></li>
+    </ul>
+</section>

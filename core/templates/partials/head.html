@@ -1,0 +1,13 @@
+{% load static %}
+<head>
+    {% include 'partials/meta.html' %}
+    <title>{{ pagina_atual|capfirst }} | Conselho Tutelar</title>
+    {% if pagina_atual == "login" %}
+        <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    {% else %}
+        <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">    
+    {% endif %}
+    <link rel="icon" href="{% static 'img/logo/favicon.light/favicon.light.svg' %}">
+    <script src="{% static 'js/themealt.js' %}"></script>
+    <script src="{% static 'js/autheye.js' %}"></script>
+</head>

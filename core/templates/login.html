@@ -1,15 +1,6 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="light">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Conselho Tutelar</title>
-    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
-    <link rel="icon" href="{% static 'img/logo/favicon.light/favicon.light.svg' %}">
-    <script src="{% static 'js/themealt.js' %}"></script>
-    <script src="{% static 'js/autheye.js' %}"></script>
-</head>
+{% include 'partials/doctype.html' %}
+{% include 'partials/head.html' with pagina_atual='login' %}
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
 {% if messages %}
@@ -66,10 +57,10 @@
                 <label class="form-check-label" for="flexCheckDefault" >Lembre-se de mim</label>
             </div>
             <button class="btn btn-primary w-100 py-2">Entre</button>
-            <div class="text-body-tertiary mt-5 text-center fs-6">
-                <p>TCC 2025 - Sistema Integrado de Gestão do <b>Conselho Tutelar</b> de Mococa</p>
-                <p class="fs-6">Ana Carolina Carnelos Masquetti e Vitor Mollo Cunha</p>
-            </div>
+            
+            <!--RODAPE-->
+            {% include 'partials/rodape.html' %}
+            <!--RODAPE-->
         </form>
     </main>
     
@@ -78,6 +69,4 @@
     
     
     
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-</body>
-</html>
+{% include 'partials/endscript.html' %}

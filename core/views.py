@@ -36,10 +36,43 @@ def logout_view(request):
 
 @login_required(login_url='login')
 def dashboard_view(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'pagina_atual': 'dashboard'})
+
+@login_required(login_url='login')
+def assistidos(request):
+    return render(request, 'assistidos.html', {'pagina_atual': 'assistidos'})
+
+@login_required(login_url='login')
+def atendimento(request):
+    return render(request, 'atendimento.html', {'pagina_atual': 'atendimento'})
+
+@login_required(login_url='login')
+def notificacao(request):
+    return render(request, 'notificacao.html', {'pagina_atual': 'notificacao'})
+
+@login_required(login_url='login')
+def oficios(request):
+    return render(request, 'oficios.html', {'pagina_atual': 'oficios'})
+
+@login_required(login_url='login')
+def protocolos(request):
+    return render(request, 'protocolos.html', {'pagina_atual': 'protocolos'})
+
+@login_required(login_url='login')
+def atividade(request):
+    return render(request, 'atividade.html', {'pagina_atual': 'atividade'})
+
+@login_required(login_url='login')
+def estatisticas(request):
+    return render(request, 'estatisticas.html', {'pagina_atual': 'estatisticas'})
+
 
 def home_view(request):
     if request.user.is_authenticated:
         return redirect('dashboard')
     else:
         return redirect('login')
+    
+
+
+

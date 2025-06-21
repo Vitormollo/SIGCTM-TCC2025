@@ -1,0 +1,76 @@
+<aside class="d-flex flex-column flex-shrink bg-body-tertiary">
+    <!--LOGO-->{% include 'partials/logolateral.html' %}
+    <!--NAVEGACAO LATERAL-->
+    <section class="barralateral w-100" id="navegacao-lateral">
+        <nav class="navbar w-100">
+            <ul class="nav nav-pills flex-column mb-auto w-100 align-content-center">
+                <!-- MENU INÍCIO -->
+                <li class="nav-item">
+                    <a href="{% url 'dashboard' %}" class="nav-link d-flex {% if pagina_atual == 'dashboard' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-house-door"></i>
+                        <span class="ms-2 d-none d-xl-block">Início</span>
+                    </a>
+                </li>
+
+                <!-- MENU ASSISTIDOS -->
+                <li class="nav-item">
+                    <a href="{% url 'assistidos' %}" class="nav-link d-flex {% if pagina_atual == 'assistidos' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-person-heart"></i>
+                        <span class="ms-2 d-none d-xl-block">Assistidos</span>
+                    </a>
+                </li>
+
+                <!-- MENU ATENDIMENTO -->
+                <li class="nav-item">
+                    <a href="{% url 'atendimento' %}" class="nav-link d-flex {% if pagina_atual == 'atendimento' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-person-walking"></i>
+                        <span class="ms-2 d-none d-xl-block">Atendimento</span>
+                    </a>
+                </li>
+
+                <!-- MENU NOTIFICAÇÃO -->
+                <li class="nav-item">
+                    <a href="{% url 'notificacao' %}" class="nav-link d-flex {% if pagina_atual == 'notificacao' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span class="ms-2 d-none d-xl-block">Notificação</span>
+                    </a>
+                </li>
+
+                <!-- MENU OFÍCIOS -->
+                <li class="nav-item">
+                    <a href="{% url 'oficios' %}" class="nav-link d-flex {% if pagina_atual == 'oficios' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-envelope-paper-fill"></i>
+                        <span class="ms-2 d-none d-xl-block">Ofícios</span>
+                    </a>
+                </li>
+
+                <!-- MENU PROTOCOLOS -->
+                <li class="nav-item">
+                    <a href="{% url 'protocolos' %}" class="nav-link d-flex {% if pagina_atual == 'protocolos' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-file-earmark-post-fill"></i>
+                        <span class="ms-2 d-none d-xl-block">Protocolos</span>
+                    </a>
+                </li>
+
+                <!-- MENU ATIVIDADE -->
+                <li class="nav-item">
+                    <a href="{% url 'atividade' %}" class="nav-link d-flex {% if pagina_atual == 'atividade' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-card-list"></i>
+                        <span class="ms-2 d-none d-xl-block">Atividade</span>
+                    </a>
+                </li>
+
+                <!-- MENU ESTATÍSTICAS -->
+                <li class="nav-item">
+                    <a href="{% url 'estatisticas' %}" class="nav-link d-flex {% if pagina_atual == 'estatisticas' %} active bg-primary rounded-0 {% else %} link-body-emphasis {% endif %}">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <span class="ms-2 d-none d-xl-block">Estatísticas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section><!--NAVEGAÇÃO LATERAL-->
+    <hr><!--Divisoria entre NAVEGACAO e DADOS-->
+    <!--DADOS DO CT-->{% include 'partials/dadosct.html' %}
+    <!-- RODAPE LATERAL-->{% include 'partials/rodapelateral.html' %}
+</aside>

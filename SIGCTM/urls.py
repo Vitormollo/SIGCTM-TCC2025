@@ -25,4 +25,11 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),
     path('dashboard/', views.dashboard_view, name='dashboard'),
+    path('assistidos/', views.assistidos, name='assistidos'),
+    path('atendimento/', views.atendimento, name='atendimento'),
+    path('notificacao/', views.notificacao, name='notificacao'),
+    path('oficios/', views.oficios, name='oficios'),
+    path('protocolos/', views.protocolos, name='protocolos'),
+    path('atividade/', views.atividade, name='atividade'),
+    path('estatisticas/', views.estatisticas, name='estatisticas'),
 ]

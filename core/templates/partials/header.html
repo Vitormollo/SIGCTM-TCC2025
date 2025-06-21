@@ -1,0 +1,14 @@
+<header class="p-2 bg-body-tertiary">
+    <!--TÍTULO DA PÁGINA-->{% include 'partials/titulo.html' with pagina_atual=pagina_atual%}
+    <!--BUSCA BASICA-->
+    <span id="buscabasica-header">
+        <form action="">
+            <input type="text" name="" id="buscabasica-header-form" class="form-control" placeholder="Nome do Assistido">
+            <button class="btn btn-outline-primary"><i class="bi bi-search"></i></button>
+        </form>
+    </span><!--BUSCA BASICA-->
+
+    <!--ATALHOS-->
+    {% include 'partials/atalhos.html' %}
+    <!--ATALHOS-->
+</header>
