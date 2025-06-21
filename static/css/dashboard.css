@@ -67,6 +67,9 @@ aside{
 .temamudanca{
     cursor: pointer !;
 }
+.dadosdropdown{
+    z-index: 1000;
+}
 /*BARRA LATERAL*/
 
 
