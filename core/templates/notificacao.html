@@ -7,8 +7,13 @@
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="notificacao" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal overflow-hidden" class="m-2">
-            <div class="card-header d-flex justify-content-between">
-                <h2 class="h5">Notificações <span class="badge text-bg-danger">+15</span></h2>
+            <div class="mx-3 my-2 d-flex">
+                <h5 class="p-0 m-0">Notificações pendentes<span class="badge text-bg-danger ms-3">+15</span></h5>
+                <div class="vr mx-3">&nbsp;</div>
+                <div><a href="" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Notificações já feitas</a></div>
+            </div>
+            <div class="mx-3">
+                <p>A interface de notificação permite que os secretários realizem de forma rápida e eficiente o envio de comunicados oficiais aos parentes dos assistidos. </p>
             </div>
             <div class="container-fluid">
                 <div class="row ">
@@ -28,12 +33,62 @@
                                     <span>Martinho da Silva Safadão</span>
                                 </div>
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="row">
+                                        <div class="col-6 infoassist">
+                                            <h5 class="text-body-emphasis">Informações do Assistido</h5>
+                                            <table>
+                                                <tr>
+                                                    <td>Nome:</td>
+                                                    <td>Martinho da Silva Safadão</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pasta:</td>
+                                                    <td>081/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sexo:</td>
+                                                    <td>Não definido</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nascimento:</td>
+                                                    <td>08/05/2014</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Endereço</td>
+                                                    <td>R. dos Marcianos Nº501</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-6 infoassist ">
+                                            <h5 class="text-body-emphasis">Informações Familiares</h5>
+                                            <table>
+                                                <tr>
+                                                    <td>Responsável:</td>
+                                                    <td>Fulano de Tal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Genitora:</td>
+                                                    <td>Marta da Silva Safadon</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Genitor:</td>
+                                                    <td>Martão da Silva Safadao tambem</td>
+                                                </tr>
+                                            </table>
+                                            <h6 class="text-body-emphasis">Irmãos</h6>
+                                            <p>Joano ngm</p>
+
+                                        </div>
+                                        <div class="col-6 infoassist">
+                                            <h5 class="text-body-emphasis">Contato</h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between bg-body-primary">
-                                    <a href="">Pasta</a>
+                                    <a href="" class="btn btn-outline-secondary btn-sm "><b><i class="bi bi-info-circle-fill me-2"></i>Pasta</b></a>
                                     <a href="" class="btn btn-primary btn-sm">
-                                        Notificar
+                                        Marcar feito
                                     </a>
                                 </div>
                             </article>
@@ -56,162 +111,6 @@
 
 
 
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <section class="m-0 ">
-                            <article class="card">
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
 
 
 

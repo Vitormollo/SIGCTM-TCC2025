@@ -3,11 +3,17 @@
 {% include "partials/head.html" with pagina_atual="dashboard" %}
 <body>
     <!--LATERAL-->{% include 'partials/aside.html' with pagina_atual='dashboard' %}
+
     <main>
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="dashboard" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal" class="m-2">
+            {% include 'partials/pesquisarapida.html' %}
+            
             <div class="d-block d-xl-flex">
+                
+                
+                
                 <section class="card secao-main m-1">
                     <div class="card-header d-flex justify-content-between">
                         <h2 class="h5">Notificações <span class="badge text-bg-danger">+15</span></h2>
@@ -25,4 +31,6 @@
             {% include "partials/rodape.html" %}
         </div><!--RODAPE-->
     </main>
-{% include 'partials/endscript.html' %}
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
