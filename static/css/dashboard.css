@@ -92,6 +92,14 @@ header h7{
     padding: 7px 12px;
 }
 
+.divisoriadata{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.divisoriadata div.h4{
+    margin-bottom: -20px;
+}
+
 
 
 
@@ -133,6 +141,14 @@ footer{
 .infoassist table{
     margin: 0;
     font-size: 0.9em;
+}
+.infoassist table tr td:first-child, .infoassist form h6{
+    font-weight: 700;
+    padding-right: 5px;
+}
+.infoassist table td{
+    text-align: start;
+    vertical-align: top;
 }
 /*notificações*/
 
