@@ -94,10 +94,10 @@ header h7{
 
 .divisoriadata{
     margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
-.divisoriadata div.h4{
-    margin-bottom: -50px;
+.divisoriadata div{
+    margin-bottom: -15px;
 }
 
 
