@@ -3,12 +3,12 @@
 {% include "partials/head.html" with pagina_atual="notificacao" %}
 <body>
     <!--LATERAL-->{% include 'partials/aside.html' with pagina_atual='notificacao' %}
-    <main>
+    <main class="bg-body-secondary">
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="notificacao" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal overflow-hidden" class="m-2">
             <div class="mx-3 my-2 ">
-                <h5 class="p-0 m-0 display-6 bg-body">Notificações pendentes</h5>
+                <h5 class="p-0 m-0 display-6">Notificações pendentes</h5>
                 <p>A interface de notificação permite que os secretários realizem de forma rápida e eficiente o envio de comunicados oficiais aos parentes dos assistidos. </p>
             </div>
             <div class="mx-3">
@@ -27,15 +27,21 @@
                         <section class="m-0 shadow-sm">
                             <article class="card">
                                 <!--Header CARD Notificações-->
-                                <div class="card-header h5 d-flex gap-3">
-                                    <span class="badge text-bg-secondary">081/19</span>
-                                    <span>Martinho da Silva Safadão</span>
+                                <div class="card-header h5 d-flex justify-content-between">
+                                    <div class="d-flex gap-3">
+                                        <span class="badge text-bg-secondary">081/19</span>
+                                        <span>Martinho da Silva Safadão</span>
+                                    </div>
+                                    <div class="text-body-tertiary align-content-center">
+                                        <div class="longago"><i class="bi bi-clock-history me-2"></i>há 2 horas</div>
+                                    </div>
+                                    
                                 </div><!--Header CARD Notificações-->
                                 <!--Body CARD Notificações-->
                                 <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6 infoassist">
-                                            <h5 class="text-body-emphasis">Informações do Assistido</h5>
+                                    <div class="row px-1 g-2 justify-content-between">
+                                        <div class="col-12 col-lg-6 infoassist">
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Informações do Assistido</h5>
                                             <table>
                                                 <tr>
                                                     <td>Nome:</td>
@@ -88,8 +94,8 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                        <div class="col-6 infoassist ">
-                                            <h5 class="text-body-emphasis">Informações Familiares</h5>
+                                        <div class="col-12 col-lg-6 infoassist">
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Informações Familiares</h5>
                                             <table>
                                                 <tr>
                                                     <td>Responsável:</td>
@@ -124,8 +130,8 @@
                                                     </td>
                                             </table>
                                         </div>
-                                        <div class="col-6 infoassist">
-                                            <h5 class="text-body-emphasis">Contato</h5>
+                                        <div class="col-12 col-lg-6 infoassist">
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Contato</h5>
                                             <table>
                                                 <tr>
                                                     <td>Genitora <i class="bi bi-whatsapp"></i></td>
@@ -145,11 +151,11 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                        <div class="col-6 infoassist">
-                                            <h5 class="text-body-emphasis">Sobre a Notificação</h5>
+                                        <div class="col-12 col-lg-6 infoassist">
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Sobre a Notificação</h5>
                                             <table>
                                                 <tr>
-                                                    <td>Sobre</td>
+                                                    <td>Sobre:</td>
                                                     <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
                                                 </tr>
                                                 <tr>
@@ -158,12 +164,12 @@
                                                 </tr>
                                             </table>
                                             <form action="">
-                                                <h6>Obs</h6>
-                                                <textarea name="" id="" class="form-control"></textarea>
-                                                <h6>Hora marcada</h6>
-                                                <div class="d-flex">
-                                                    <input type="date" class="form-control">
-                                                    <input type="time" class="form-control">
+                                                <h6>Obs.:</h6>
+                                                <textarea name="" id="" class="form-control border-black border-2"></textarea>
+                                                <h6>Hora marcada:</h6>
+                                                <div class="d-flex gap-1">
+                                                    <input type="date" class="form-control border-black border-2">
+                                                    <input type="time" class="form-control border-black border-2">
                                                 </div>
                                             </form>
                                         </div>
