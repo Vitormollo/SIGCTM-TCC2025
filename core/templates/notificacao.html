@@ -7,13 +7,43 @@
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="notificacao" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal overflow-hidden" class="m-2">
+            <!--Texto título e sobre-->
             <div class="mx-3 my-2 ">
-                <h5 class="p-0 m-0 display-6">Notificações pendentes</h5>
+                <h5 class="p-0 m-0 mb-2 display-6 border-5 border-bottom d-inline-block">Notificações pendentes</h5>
                 <p>A interface de notificação permite que os secretários realizem de forma rápida e eficiente o envio de comunicados oficiais aos parentes dos assistidos. </p>
-            </div>
+            </div><!--Texto título e sobre-->
+            <!--Interface de pesquisa notficiações-->
             <div class="mx-3">
-                
-            </div>
+                <div></div>
+                <div>
+                    <form action="" id="checkconselheiras">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input border-black" type="checkbox" id="conselheira-um">
+                            <label class="form-check-label" for="conselheira-um">Conselheira Um</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input border-black" type="checkbox" id="conselheira-dois">
+                            <label class="form-check-label" for="conselheira-dois">Conselheira Dois</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input border-black" type="checkbox" id="conselheira-tres">
+                            <label class="form-check-label" for="conselheira-tres">Conselheira Três</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input border-black" type="checkbox" id="conselheira-quatro">
+                            <label class="form-check-label" for="conselheira-quatro">Conselheira Quatro</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input border-black" type="checkbox" id="conselheira-cinco">
+                            <label class="form-check-label" for="conselheira-cinco">Conselheira Cinco</label>
+                        </div>
+                    </form>
+                </div>
+            </div><!--Interface de pesquisa notficiações-->
             <div class="container-fluid">
                 <!--Separação por data-->
                 <div class="row ">
@@ -41,7 +71,7 @@
                                 <div class="card-body">
                                     <div class="row px-1 g-2 justify-content-between">
                                         <div class="col-12 col-lg-6 infoassist">
-                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Informações do Assistido</h5>
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 d-inline-block">Informações do Assistido</h5>
                                             <table>
                                                 <tr>
                                                     <td>Nome:</td>
@@ -95,7 +125,7 @@
                                             </table>
                                         </div>
                                         <div class="col-12 col-lg-6 infoassist">
-                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Informações Familiares</h5>
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 d-inline-block">Informações Familiares</h5>
                                             <table>
                                                 <tr>
                                                     <td>Responsável:</td>
@@ -131,7 +161,7 @@
                                             </table>
                                         </div>
                                         <div class="col-12 col-lg-6 infoassist">
-                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Contato</h5>
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 d-inline-block">Contato</h5>
                                             <table>
                                                 <tr>
                                                     <td>Genitora <i class="bi bi-whatsapp"></i></td>
@@ -152,7 +182,7 @@
                                             </table>
                                         </div>
                                         <div class="col-12 col-lg-6 infoassist">
-                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 me-5">Sobre a Notificação</h5>
+                                            <h5 class="text-body-emphasis border-1 border-bottom pt-1 d-inline-block">Sobre a Notificação</h5>
                                             <table>
                                                 <tr>
                                                     <td>Sobre:</td>
