@@ -6,7 +6,7 @@
     <main class="bg-body-secondary">
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="notificacao" %}
         <!--CONTEUDO PRINCIPAL-->
-        <div id="conteudo-principal overflow-hidden" class="m-2">
+        <div id="conteudo-principal" class="m-2">
             <!--Texto título e sobre-->
             <div class="mx-3 my-2 ">
                 <h5 class="p-0 m-0 mb-2 display-6 border-5 border-bottom d-inline-block">Notificações pendentes</h5>
@@ -14,29 +14,30 @@
             </div><!--Texto título e sobre-->
             <!--Interface de pesquisa notficiações-->
             <div class="mx-3">
-                <div></div>
                 <div>
-                    <form action="" id="checkconselheiras">
+                    <form action="" class="row px-2 gap-2">
+                        <input type="text" class="form-control col" placeholder="Pesquisa">
+                        <input type="submit" class="btn btn-outline-primary col-1">
+                    </form>
+                </div>
+                <div class="pt-2">
+                    <form action="" id="checkconselheiras" class="d-flex justify-content-between">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input border-black" type="checkbox" id="conselheira-um">
                             <label class="form-check-label" for="conselheira-um">Conselheira Um</label>
                         </div>
-                        
                         <div class="form-check form-check-inline">
                             <input class="form-check-input border-black" type="checkbox" id="conselheira-dois">
                             <label class="form-check-label" for="conselheira-dois">Conselheira Dois</label>
                         </div>
-                        
                         <div class="form-check form-check-inline">
                             <input class="form-check-input border-black" type="checkbox" id="conselheira-tres">
                             <label class="form-check-label" for="conselheira-tres">Conselheira Três</label>
                         </div>
-                        
                         <div class="form-check form-check-inline">
                             <input class="form-check-input border-black" type="checkbox" id="conselheira-quatro">
                             <label class="form-check-label" for="conselheira-quatro">Conselheira Quatro</label>
                         </div>
-                        
                         <div class="form-check form-check-inline">
                             <input class="form-check-input border-black" type="checkbox" id="conselheira-cinco">
                             <label class="form-check-label" for="conselheira-cinco">Conselheira Cinco</label>
@@ -164,7 +165,7 @@
                                             <h5 class="text-body-emphasis border-1 border-bottom pt-1 d-inline-block">Contato</h5>
                                             <table>
                                                 <tr>
-                                                    <td>Genitora <i class="bi bi-whatsapp"></i></td>
+                                                    <td><i class="bi bi-whatsapp pe-2"></i>Genitora</td>
                                                     <td>
                                                         <a href="" class="link-copy link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
                                                             (17) 2237-5831
@@ -172,7 +173,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Tio Valdao <i class="bi bi-whatsapp"></i></td>
+                                                    <td><i class="bi bi-whatsapp pe-2"></i>Tio Valdao </td>
                                                     <td>
                                                         <a href="" class="link-copy link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
                                                             (17) 2214-4812
@@ -185,8 +186,12 @@
                                             <h5 class="text-body-emphasis border-1 border-bottom pt-1 d-inline-block">Sobre a Notificação</h5>
                                             <table>
                                                 <tr>
+                                                    <td>Conselheira:</td>
+                                                    <td>Conselheira Um</td>
+                                                </tr>
+                                                <tr>
                                                     <td>Sobre:</td>
-                                                    <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                                                    <td>Notifique a mãe</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Data e hora:</td>
@@ -197,8 +202,8 @@
                                                 <h6>Obs.:</h6>
                                                 <textarea name="" id="" class="form-control border-black border-2"></textarea>
                                                 <h6>Hora marcada:</h6>
-                                                <div class="d-flex gap-1">
-                                                    <input type="date" class="form-control border-black border-2">
+                                                <div class=" d-flex flex-column-reverse gap-1 inputsnots">
+                                                    <input type="date" class="form-control border-black border-2 ">
                                                     <input type="time" class="form-control border-black border-2">
                                                 </div>
                                             </form>
@@ -215,55 +220,14 @@
                             </article>
                         </section>
                     </div><!--Card de informações-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <!--TEMPLATE-->
                 </div>
             </div>
-            
         </div><!--CONTEUDO PRINCIPAL-->
         <!--RODAPE-->
-        <div class="border-bottom mb-3 pt-4">
+        <div class="border-bottom mb-3 pt-4 bg-body-tertiary">
             {% include "partials/rodape.html" %}
         </div><!--RODAPE-->
+        
     </main>
 {% include 'partials/endscript.html' %}
