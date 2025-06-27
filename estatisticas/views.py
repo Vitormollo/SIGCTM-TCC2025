@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def estatisticas(request):
+    return render(request, 'estatisticas/estatisticas.html', {'pagina_atual': 'estatisticas'})

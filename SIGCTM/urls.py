@@ -30,22 +30,21 @@ urlpatterns = [
 
 
 
-    path('usuarios/', include('usuario.urls')),  # login e logout
+    
 
     path('dashboard/', views.dashboard_view, name='dashboard'),
     
-    path('atendimento/', views.atendimento, name='atendimento'),
 
-
+    path('usuarios/', include('usuario.urls')), 
     path('assistidos/', include('pasta.urls')),
     path('notificacao/', include('notificacao.urls')),
     path('atividade/', include('log.urls')),
     path('oficios/', include('oficios.urls')),
     path('pasta/', include('pasta.urls')),
-
+    path('atendimento/', include('atendimento.urls')),
+    path('estatisticas/', include('estatisticas.urls')),
     
     path('protocolos/', views.protocolos, name='protocolos'),
     path('atividade/', views.atividade, name='atividade'),
-    path('estatisticas/', views.estatisticas, name='estatisticas'),
     
 ]

@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def atendimento(request):
+    return render(request, 'atendimento/atendimento.html', {'pagina_atual': 'atendimento'})

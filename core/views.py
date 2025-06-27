@@ -24,10 +24,6 @@ def assistidos(request):
     return render(request, 'assistidos.html', {'pagina_atual': 'assistidos'})
 
 
-def atendimento(request):
-    return render(request, 'atendimento.html', {'pagina_atual': 'atendimento'})
-
-
 def notificacao(request):
     return render(request, 'notificacao.html', {'pagina_atual': 'notificacao'})
 

@@ -1,13 +1,14 @@
 {% load static %}
 {% include 'partials/doctype.html' %}
-{% include "partials/head.html" with pagina_atual="estatisticas" %}
+{% include "partials/head.html" with pagina_atual="atendimento" %}
 <body>
-    <!--LATERAL-->{% include 'partials/aside.html' with pagina_atual='estatisticas' %}
+    <!--LATERAL-->{% include 'partials/aside.html' with pagina_atual='atendimento' %}
     <main class="bg-body-secondary">
-        <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="estatisticas" %}
+        <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="atendimento" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal" class="m-2">
-            <a href="{% url 'notificacao' %}">Ir para Notificações</a>
+            <h1>Atendimento</h1>
+            <!-- Adicione aqui o conteúdo específico da página de atendimento -->
         </div><!--CONTEUDO PRINCIPAL-->
         <!--RODAPE-->
         <div class="border-bottom mb-3 pt-4 bg-body-tertiary">
@@ -15,5 +16,3 @@
         </div><!--RODAPE-->
     </main>
 {% include 'partials/endscript.html' %}
-</body>
-</html>

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'pasta',
     'atendimento',
     'notificacao',
+    'estatisticas',
     'oficios',
     'protocolos',
     'backup',
