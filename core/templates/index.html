@@ -3,34 +3,18 @@
 {% include "partials/head.html" with pagina_atual="dashboard" %}
 <body>
     <!--LATERAL-->{% include 'partials/aside.html' with pagina_atual='dashboard' %}
-
-    <main>
+    <main class="bg-body-secondary">
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="dashboard" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal" class="m-2">
-            {% include 'partials/pesquisarapida.html' %}
             
-            <div class="d-block d-xl-flex">
-                
-                
-                
-                <section class="card secao-main m-1">
-                    <div class="card-header d-flex justify-content-between">
-                        <h2 class="h5">Notificações <span class="badge text-bg-danger">+15</span></h2>
-                        <a href="{% url 'notificacao' %}" class="link-secondary link-offset-1">mais detalhes</a>    
-                    </div>
-                    <div class="card-body">
-                        
-                    </div>
+            <a href="{% url 'notificacao' %}">Ir para Notificações</a>
 
-                </section>
-            </div>
+
         </div><!--CONTEUDO PRINCIPAL-->
         <!--RODAPE-->
-        <div class="border-bottom mb-3">
+        <div class="border-bottom mb-3 pt-4 bg-body-tertiary">
             {% include "partials/rodape.html" %}
         </div><!--RODAPE-->
     </main>
-<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-</body>
-</html>
+{% include 'partials/endscript.html' %}
