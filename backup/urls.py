@@ -1,6 +1,7 @@
 from django.urls import path
-from core import views
+from . import views
 
 urlpatterns = [
-    path('', views.backup, name='backup'),
+    path('', views.backup_view, name='backup'),
+    path('backup/', views.backup_view, name='backup'),
 ]

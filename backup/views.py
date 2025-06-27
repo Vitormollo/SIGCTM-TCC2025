@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def backup_view(request):
+    return render(request, 'backup/backup.html', {'pagina_atual': 'backup'})

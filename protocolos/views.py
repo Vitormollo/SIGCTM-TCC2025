@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def protocolos(request):
+    return render(request, 'protocolos.html', {'pagina_atual': 'protocolos'})

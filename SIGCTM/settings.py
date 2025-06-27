@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
     'core',
     'usuario',
-    'pasta',
+    'assistido',
     'atendimento',
     'notificacao',
     'estatisticas',

@@ -36,15 +36,16 @@ urlpatterns = [
     
 
     path('usuarios/', include('usuario.urls')), 
-    path('assistidos/', include('pasta.urls')),
+    path('assistidos/', include('assistido.urls')),
     path('notificacao/', include('notificacao.urls')),
     path('atividade/', include('log.urls')),
     path('oficios/', include('oficios.urls')),
-    path('pasta/', include('pasta.urls')),
+    path('assistido/', include('assistido.urls')),
     path('atendimento/', include('atendimento.urls')),
     path('estatisticas/', include('estatisticas.urls')),
+    path('backup/', include('backup.urls')),
+    path('protocolos/', include('protocolos.urls')),
     
-    path('protocolos/', views.protocolos, name='protocolos'),
-    path('atividade/', views.atividade, name='atividade'),
+    
     
 ]

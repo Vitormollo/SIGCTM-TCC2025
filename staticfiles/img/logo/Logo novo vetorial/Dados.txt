@@ -1,4 +1,0 @@
-Azul Escuro:	00539B
-Amarelo:	FFB808
-Verde:		3EC35E
-Vermelho:	FF2E34
