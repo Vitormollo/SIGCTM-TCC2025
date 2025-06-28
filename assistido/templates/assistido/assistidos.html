@@ -7,13 +7,269 @@
         <!--BARRA SUPERIOR-->{% include "partials/header.html" with pagina_atual="assistidos" %}
         <!--CONTEUDO PRINCIPAL-->
         <div id="conteudo-principal" class="m-2">
-            <a href="{% url 'notificacao' %}">Ir para Notificações</a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--Texto título e sobre-->
+            <div class="mx-3 my-2 ">
+                <h5 class="p-0 m-0 mb-2 display-6 border-5 border-bottom d-inline-block">Listagem de Assistidos</h5>
+                <p>A interface de listagem permite que os secretários e conselheiras realizem de forma rápida e eficiente a pesquisa de assistidos. </p>
+            </div><!--Texto título e sobre-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <!--Interface de pesquisa assistidos-->
+            <div class="container-fluid">
+                <form action="">
+                    <div class="row g-2 justify-content-between align-items-start">
+                        <!--Informações Base-->
+                        <div class="col-6">
+                            <h6 class="border-3 border-bottom border-secondary d-inline-block">
+                                Informações Base
+                            </h6>
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <input type="text" placeholder="Pasta" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Nome Completo" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div><!--Informações Base-->
+                        <!--Endereço-->
+                        <div class="col-6">
+                            <h6 class="border-3 border-bottom border-secondary d-inline-block">Endereço</h6>
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <input type="text" placeholder="Rua" class="form-control">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" placeholder="Nº" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" placeholder="Bairro" class="form-control">
+                                </div>
+                            </div>
+                        </div><!--Endereço-->
+                        <!--Família-->
+                        <div class="col-6">
+                            <h6 class="border-3 border-bottom border-secondary d-inline-block">Família</h6>
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <input type="text" placeholder="Genitora" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Genitor" class="form-control">    
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Responsável" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Irmã(o)" class="form-control">
+                                </div>
+                            </div>
+                        </div><!--Família-->
+                        <!--Contato-->
+                        <div class="col-6">
+                            <h6 class="border-3 border-bottom border-secondary d-inline-block">Contato</h6>
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <input type="text" placeholder="Telefone" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Escola</option>
+                                        <option value="1">EMEB Ivone Canesqui</option>
+                                        <option value="2">EMEB Maria da Glória</option>
+                                        <option value="3">EMEB Maria da Penha</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div><!--Contato-->
+                        <!--Conselheira Responsável-->
+                        <div class="col-6">
+                            <h6 class="border-3 border-bottom border-secondary d-inline-block">Conselheira Responsável</h6>
+                            <div class="row g-0">
+                                <div class="col-12 row">
+                                    <div class="row">
+                                        <div class="form-check col-6">
+                                            <input class="form-check-input border-black" type="checkbox" id="conselheira-um">
+                                            <label class="form-check-label" for="conselheira-um">Conselheira Um</label>
+                                        </div>
+                                        <div class="form-check col-6">
+                                            <input class="form-check-input border-black" type="checkbox" id="conselheira-dois">
+                                            <label class="form-check-label" for="conselheira-dois">Conselheira Dois</label>
+                                        </div>
+                                        <div class="form-check col-6">
+                                            <input class="form-check-input border-black" type="checkbox" id="conselheira-tres">
+                                            <label class="form-check-label" for="conselheira-tres">Conselheira Três</label>
+                                        </div>
+                                        <div class="form-check col-6">
+                                            <input class="form-check-input border-black" type="checkbox" id="conselheira-quatro">
+                                            <label class="form-check-label" for="conselheira-quatro">Conselheira Quatro</label>
+                                        </div>
+                                        <div class="form-check col-6">
+                                            <input class="form-check-input border-black" type="checkbox" id="conselheira-cinco">
+                                            <label class="form-check-label" for="conselheira-cinco">Conselheira Cinco</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <a class="small" href="">Selecionar todas</a>
+                            </div>
+                        </div><!--Conselheira Responsável-->
+                        <!--Status-->
+                        <div class="col-6">
+                            <h6 class="border-3 border-bottom border-secondary d-inline-block">Status</h6>
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                        <label class="form-check-label" for="radioDefault1">Menor</label>   
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                        <label class="form-check-label" for="radioDefault1">Gestante</label>   
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                        <label class="form-check-label" for="radioDefault1">Outro</label>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--Status-->
+                    </div>
+                </form>
+            </div><!--Interface de pesquisa assistidos-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container-fluid">
+                <!--Separação por data-->
+                <div class="row ">
+                    <!--Divisoria por data-->
+                    <div class="divisoriadata">
+                        <div class="h4">Resultados</div>
+                        <hr>
+                    </div><!--Divisoria por data-->
+                    <!--Card de informações-->
+                    <div class="col-12 col-lg-6 mb-3">
+                        <section class="m-0 shadow-sm">
+                            <article class="card">
+                                <!--Header CARD Notificações-->
+                                <div class="card-header h5 d-flex justify-content-between">
+                                    <div class="d-flex gap-3">
+                                        <span class="badge text-bg-secondary">081/19</span>
+                                        <span>Martinho da Silva Safadão</span>
+                                    </div>
+                                    <div class="text-body-tertiary align-content-center">
+                                        <div class="longago"><i class="bi bi-clock-history me-2"></i>há 2 horas</div>
+                                    </div>
+                                </div><!--Header CARD Notificações-->
+                                <!--Body CARD Notificações-->
+                                <div class="card-body">
+                                    aa
+                                </div><!--Body CARD Notificações-->
+                                <!--Footer CARD Notificações-->
+                                <div class="card-footer d-flex justify-content-between bg-body-primary">
+                                    <a href="{% url 'assistido' %}" class="btn btn-outline-secondary btn-sm "><b><i class="bi bi-info-circle-fill me-2"></i>Pasta</b></a>
+                                    <a href="#" class="btn btn-primary btn-sm">
+                                        Marcar feito
+                                    </a>
+                                </div><!--Footer CARD Notificações-->
+                            </article>
+                        </section>
+                    </div><!--Card de informações-->
+                    <!--TEMPLATE-->
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div><!--CONTEUDO PRINCIPAL-->
         <!--RODAPE-->
         <div class="border-bottom mb-3 pt-4 bg-body-tertiary">
             {% include "partials/rodape.html" %}
         </div><!--RODAPE-->
+
+
+
+
+
+
+
+
     </main>
 {% include 'partials/endscript.html' %}
-</body>
-</html>
+
